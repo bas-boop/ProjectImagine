@@ -3122,11 +3122,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7da6c58f6302df14b8938115e223e5d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  door1: {fileID: 714704818}
-  door2: {fileID: 1066258625}
-  openAngle1: 135
-  openAngle2: -135
-  openSpeed: 1
+  leftDoor:
+    transform: {fileID: 1066258625}
+    openAngle: -135
+  rightDoor:
+    transform: {fileID: 714704818}
+    openAngle: 135
+  openSpeed: 2
 --- !u!1 &1555200678
 GameObject:
   m_ObjectHideFlags: 0
