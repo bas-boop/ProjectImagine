@@ -1,8 +1,9 @@
 ﻿using System;
-using Framework.Attributes;
-using Framework.Extensions;
 using UnityEngine;
 using UnityEngine.Events;
+
+using Framework.Attributes;
+using Framework.Extensions;
 
 namespace Framework.TriggerArea
 {
@@ -26,6 +27,9 @@ namespace Framework.TriggerArea
         private MeshFilter _meshFilter;
         private BoxCollider _boxCollider;
         private SphereCollider _sphereCollider;
+        private CapsuleCollider _capsuleCollider;
+
+        private bool _isTriggered;
 
         private void Awake()
         {
@@ -36,23 +40,32 @@ namespace Framework.TriggerArea
             _boxCollider.isTrigger = true;
             _sphereCollider.isTrigger = true;
             _capsuleCollider.isTrigger = true;
+            
+            if (!_meshFilter)
+                _meshFilter = GetComponent<MeshFilter>();
+
+            _meshFilter.mesh = null;
         }
 
         private void OnTriggerEnter(Collider other)
         {
             if (behaviour == TriggerBehaviour.EXIT_ONLY
+                || CheckOneTimeUse()
                 || !other.CompareTag(tagToTriggerWith))
                 return;
-            
+
+            _isTriggered = true;
             onEnter?.Invoke();
         }
 
         private void OnTriggerExit(Collider other)
         {
             if (behaviour == TriggerBehaviour.ENTER_ONLY
+                || CheckOneTimeUse()
                 || !other.CompareTag(tagToTriggerWith))
                 return;
             
+            _isTriggered = true;
             onExit?.Invoke();
         }
 
@@ -92,22 +105,8 @@ namespace Framework.TriggerArea
             }
         }
 
-        public void TestTrigger()
-        {
-            switch (shapeToUse)
-            {
-                case StandardMeshes.CUBE:
-                    Debug.Log("Cube");
-                    break;
-                case StandardMeshes.SPHERE:
-                    Debug.Log("Sphere");
-                    break;
-                case StandardMeshes.CAPSULE:
-                    Debug.Log("Capsule");
-                    break;
-                default:
-                    throw new ArgumentOutOfRangeException();
-            }
-        }
+        public void TestTrigger() => Debug.Log(shapeToUse);
+
+        private bool CheckOneTimeUse() => isOneTimeUse && _isTriggered;
     }
 }
