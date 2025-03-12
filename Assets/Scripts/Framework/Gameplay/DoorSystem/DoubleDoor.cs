@@ -15,32 +15,22 @@ namespace Framework.Gameplay.DoorSystem
         [SerializeField] private Color endLineColor = Color.green;
         [SerializeField] private float lineLenght = 5;
 
-        private bool _hasActivated;
-
         private void Awake()
         {
             leftDoor.Init();
             rightDoor.Init();
         }
 
-        private void OnTriggerEnter(Collider other)
+        public void Open()
         {
-            if (other.CompareTag("Player") && !_hasActivated)
-            {
-                _hasActivated = true;
-                StartCoroutine(MoveDoor(leftDoor, true));
-                StartCoroutine(MoveDoor(rightDoor, true));
-            }
+            StartCoroutine(MoveDoor(leftDoor, true));
+            StartCoroutine(MoveDoor(rightDoor, true));
         }
 
-        private void OnTriggerExit(Collider other)
+        public void Close()
         {
-            if (other.CompareTag("Player") && _hasActivated)
-            {
-                StartCoroutine(MoveDoor(leftDoor, false));
-                StartCoroutine(MoveDoor(rightDoor, false));
-                Destroy(gameObject);
-            }
+            StartCoroutine(MoveDoor(leftDoor, false));
+            StartCoroutine(MoveDoor(rightDoor, false));
         }
 
         private IEnumerator MoveDoor(Door door, bool opening)
