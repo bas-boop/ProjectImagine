@@ -3129,6 +3129,10 @@ MonoBehaviour:
     transform: {fileID: 714704818}
     openAngle: 135
   openSpeed: 2
+  useGizmos: 1
+  startLineColor: {r: 1, g: 0, b: 0, a: 1}
+  endLineColor: {r: 0, g: 1, b: 0, a: 1}
+  lineLenght: 3.5
 --- !u!1 &1555200678
 GameObject:
   m_ObjectHideFlags: 0

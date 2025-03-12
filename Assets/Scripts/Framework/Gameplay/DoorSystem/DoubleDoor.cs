@@ -3,18 +3,24 @@ using UnityEngine;
 
 namespace Framework.Gameplay.DoorSystem
 {
-    public class DoorTriggerLevel2 : MonoBehaviour
+    public sealed class DoubleDoor : MonoBehaviour
     {
         [SerializeField] private Door leftDoor;
         [SerializeField] private Door rightDoor;
         [SerializeField] private float openSpeed = 2f;
 
+        [Header("Gizmos")]
+        [SerializeField] private bool useGizmos;
+        [SerializeField] private Color startLineColor = Color.red;
+        [SerializeField] private Color endLineColor = Color.green;
+        [SerializeField] private float lineLenght = 5;
+
         private bool _hasActivated;
 
-        private void Start()
+        private void Awake()
         {
-            leftDoor.Initialize();
-            rightDoor.Initialize();
+            leftDoor.Init();
+            rightDoor.Init();
         }
 
         private void OnTriggerEnter(Collider other)
@@ -53,6 +59,30 @@ namespace Framework.Gameplay.DoorSystem
             }
 
             door.transform.rotation = targetRot;
+        }
+
+        private void OnDrawGizmos()
+        {
+            if (!useGizmos)
+                return;
+            
+            DrawDoorGizmo(leftDoor, Vector3.forward);
+            DrawDoorGizmo(rightDoor, Vector3.back);
+        }
+
+        private void DrawDoorGizmo(Door door, Vector3 dir)
+        {
+            if (door.transform == null)
+                return;
+
+            Vector3 startDirection = door.transform.rotation * dir;
+            Vector3 endDirection = Quaternion.Euler(0, door.openAngle, 0) * startDirection;
+
+            Gizmos.color = startLineColor;
+            Gizmos.DrawLine(door.transform.position, door.transform.position + startDirection * lineLenght);
+
+            Gizmos.color = endLineColor;
+            Gizmos.DrawLine(door.transform.position, door.transform.position + endDirection * lineLenght);
         }
     }
 }

@@ -10,7 +10,7 @@ namespace Framework.Gameplay.DoorSystem
         public Quaternion InitialRotation { get; private set; }
         public Quaternion TargetRotation { get; private set; }
 
-        public void Initialize()
+        public void Init()
         {
             InitialRotation = transform.rotation;
             TargetRotation = InitialRotation * Quaternion.Euler(0, openAngle, 0);
