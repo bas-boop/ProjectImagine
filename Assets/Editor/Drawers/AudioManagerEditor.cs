@@ -8,59 +8,58 @@ namespace Editor.Drawers
     [CustomEditor(typeof(AudioManager))]
     public sealed class AudioManagerEditor : UnityEditor.Editor
     {
-        private SerializedProperty canPlayBreath;
-        private SerializedProperty canPlayFootsteps;
+        private const string BREATH_PROPERTY_NAME = "canPlayBreath";
+        private const string FOOTSTEPS_PROPERTY_NAME = "canPlayFootsteps";
+        private const string DEBUG_OPTIONS = "Debug Options";
+        private const string BREATH_INSPECTOR_NAME = "Can Play Breath";
+        private const string FOOTSTEPS_INSPECTOR_NAME = "Can Play Footsteps";
+        
+        private SerializedProperty _canPlayBreath;
+        private SerializedProperty _canPlayFootsteps;
 
-        // Persistent state for the foldout
-        private bool showDebugOptions
+        private bool ShowDebugOptions
         {
             get => EditorPrefs.GetBool($"{target.GetInstanceID()}_showDebugOptions", false);
             set => EditorPrefs.SetBool($"{target.GetInstanceID()}_showDebugOptions", value);
         }
 
-        private SerializedProperty iterator; // For iterating through serialized properties
+        private SerializedProperty _iterator;
 
         private void OnEnable()
         {
-            // Link serialized properties
-            canPlayBreath = serializedObject.FindProperty("canPlayBreath");
-            canPlayFootsteps = serializedObject.FindProperty("canPlayFootsteps");
+            _canPlayBreath = serializedObject.FindProperty(BREATH_PROPERTY_NAME);
+            _canPlayFootsteps = serializedObject.FindProperty(FOOTSTEPS_PROPERTY_NAME);
         }
 
         public override void OnInspectorGUI()
         {
-            // Start iterating over all serialized properties
             serializedObject.Update();
-            iterator = serializedObject.GetIterator();
+            _iterator = serializedObject.GetIterator();
 
             bool enterChildren = true;
 
-            while (iterator.NextVisible(enterChildren))
+            while (_iterator.NextVisible(enterChildren))
             {
                 enterChildren = false;
 
-                // Skip drawing debug-related properties
-                if (iterator.propertyPath == "canPlayBreath" || iterator.propertyPath == "canPlayFootsteps")
+                if (_iterator.propertyPath is BREATH_PROPERTY_NAME or FOOTSTEPS_PROPERTY_NAME)
                     continue;
 
-                // Draw all other properties
-                EditorGUILayout.PropertyField(iterator, true);
+                EditorGUILayout.PropertyField(_iterator, true);
             }
 
-            // Add a foldout section for Debug Options
             EditorGUILayout.Space();
-            showDebugOptions = EditorGUILayout.Foldout(showDebugOptions, "Debug Options", true, EditorStyles.foldoutHeader);
+            ShowDebugOptions = EditorGUILayout.Foldout(ShowDebugOptions, DEBUG_OPTIONS,
+                                            true, EditorStyles.foldoutHeader);
 
-            // If the foldout is expanded, display the debug fields
-            if (showDebugOptions)
+            if (ShowDebugOptions)
             {
-                EditorGUI.indentLevel++; // Indent for better styling
-                EditorGUILayout.PropertyField(canPlayBreath, new GUIContent("Can Play Breath"));
-                EditorGUILayout.PropertyField(canPlayFootsteps, new GUIContent("Can Play Footsteps"));
-                EditorGUI.indentLevel--; // Reset indent level
+                EditorGUI.indentLevel++;
+                EditorGUILayout.PropertyField(_canPlayBreath, new GUIContent(BREATH_INSPECTOR_NAME));
+                EditorGUILayout.PropertyField(_canPlayFootsteps, new GUIContent(FOOTSTEPS_INSPECTOR_NAME));
+                EditorGUI.indentLevel--;
             }
 
-            // Apply any property changes
             serializedObject.ApplyModifiedProperties();
         }
     }
