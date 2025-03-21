@@ -5,6 +5,8 @@ namespace Framework.AudioSystem
 {
     public sealed class AudioManager : MonoBehaviour
     {
+        private const string BREATH_GAMEOBJECT_NAME = "BreathAudioPlayer";
+        
         [Header("References")]
         [SerializeField] private FirstPersonController firstPersonController;
         [SerializeField] private AudioSource audioPlayer2D;
@@ -15,8 +17,20 @@ namespace Framework.AudioSystem
         [SerializeField] private AudioClip breathSound;
         [SerializeField] private AudioClip[] footstepsSound;
         [SerializeField] private float footstepInterval = 0.5f;
+        
+        // No header needed, there is a collapse for them 
+        [SerializeField] private bool canPlayBreath = true;
+        [SerializeField] private bool canPlayFootsteps = true;
 
+        private bool _isPlayingBreath;
         private float _footstepTimer;
+        private AudioSource _breathAudioPlayer;
+
+        private void Awake()
+        {
+            if (!_breathAudioPlayer)
+                InitBreathAudioPlayer();
+        }
 
         private void Update()
         {
@@ -27,7 +41,7 @@ namespace Framework.AudioSystem
             
             if (_footstepTimer >= footstepInterval)
             {
-                _footstepTimer = 0f;
+                _footstepTimer = 0;
                 PlayFootStep();
             }
         }
@@ -37,14 +51,36 @@ namespace Framework.AudioSystem
         public void PlayDirection(int dir)
             => Instantiate(audioPlayer3D, audioPoints[dir].position, audioPoints[dir].rotation);
 
-        public void PlayBreathingSound()
+        public void ToggleBreathPlaying()
         {
-            AudioSource newAudio = Instantiate(audioPlayer2D, transform.position, transform.rotation, transform);
-            newAudio.clip = breathSound;
+            if (!canPlayBreath)
+                return;
+            
+            _isPlayingBreath = !_isPlayingBreath;
+            
+            if (_isPlayingBreath)
+                _breathAudioPlayer.Play();
+            else
+                _breathAudioPlayer.Stop();
+        }
+
+        private void InitBreathAudioPlayer()
+        {
+            _breathAudioPlayer = Instantiate(audioPlayer2D, transform.position, transform.rotation, transform);
+            
+            _breathAudioPlayer.name = BREATH_GAMEOBJECT_NAME;
+            _breathAudioPlayer.playOnAwake = false;
+            _breathAudioPlayer.clip = breathSound;
+            _breathAudioPlayer.loop = true;
+            
+            _breathAudioPlayer.Stop();
         }
 
         private void PlayFootStep()
         {
+            if (!canPlayFootsteps)
+                return;
+            
             AudioSource newAudio = Instantiate(audioPlayer2D, transform.position, transform.rotation, transform);
             int random = Random.Range(0, footstepsSound.Length);
             newAudio.clip = footstepsSound[random];
