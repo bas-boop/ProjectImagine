@@ -12,15 +12,31 @@ namespace UI.Canvas
         [SerializeField] private TodoPair todoPrefab;
         [SerializeField] private List<string> todos;
         
-        private List<TodoPair> _todoObjects;
+        private List<TodoPair> _todoObjects = new ();
+        private int _currentTodo;
+
+        private void Start()
+        {
+            TodoPair[] childTodos = todoParent.GetComponentsInChildren<TodoPair>();
+            
+            if (childTodos.Length > 0)
+                _todoObjects.AddRange(childTodos);
+        }
 
         [ContextMenu("Create Todos")]
         public void CreatTodos()
         {
-            if (_todoObjects is { Count: > 0 })
-                _todoObjects.Clear();
+            for (int i = todoParent.childCount - 1; i >= 0; i--)
+            {
+                Transform child = todoParent.GetChild(i);
+                Debug.Log(i);
+                DestroyImmediate(child.gameObject);
+            }
 
-            if (todoPrefab == null || todoParent == null)
+            _todoObjects.Clear();
+
+            if (todoPrefab == null 
+                || todoParent == null)
                 throw new Exception(CREATE_TODOS_ERROR);
 
             int lenght = todos.Count;
@@ -31,6 +47,15 @@ namespace UI.Canvas
                 todo.SetText(todos[i]);
                 _todoObjects.Add(todo);
             }
+        }
+
+        public void MarkNextTodoDone()
+        {
+            if (_currentTodo == _todoObjects.Count)
+                return;
+            
+            _todoObjects[_currentTodo].SetTodoDone();
+            _currentTodo++;
         }
     }
 }
