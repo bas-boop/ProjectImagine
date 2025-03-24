@@ -1110,6 +1110,11 @@ MonoBehaviour:
   - Go away
   - Second building
   - RUN
+  rectTransform: {fileID: 5084077591141560902}
+  hiddenPosition: {x: 800, y: -1000}
+  visiblePosition: {x: 0, y: 0}
+  animationDuration: 0.5
+  rotationAngle: 15
 --- !u!1 &7894405279443281854
 GameObject:
   m_ObjectHideFlags: 0

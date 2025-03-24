@@ -1,0 +1,34 @@
+{
+    "name": "Controls",
+    "maps": [
+        {
+            "name": "Action map",
+            "id": "be171ae5-7a1f-4e68-80ee-d8ce0ba9078c",
+            "actions": [
+                {
+                    "name": "TogglePaper",
+                    "type": "Button",
+                    "id": "9d471bcf-0d20-4c17-b3db-163b8e61f150",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "0c87c94c-98b0-458e-b331-5dffb7583d40",
+                    "path": "<Keyboard>/t",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "TogglePaper",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
