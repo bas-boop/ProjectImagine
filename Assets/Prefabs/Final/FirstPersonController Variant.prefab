@@ -237,6 +237,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4459864850019384750, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
       insertIndex: -1
       addedObject: {fileID: 995730887480845126}
+    - targetCorrespondingSourceObject: {fileID: 4459864850019384750, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4387246008549004593}
     - targetCorrespondingSourceObject: {fileID: 4459864851310106424, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
       insertIndex: -1
       addedObject: {fileID: 5041684573018707607}
@@ -310,7 +313,6 @@ MonoBehaviour:
   firstPersonController: {fileID: 4887402554224320824}
   audioPlayer2D: {fileID: 4768661004723879035, guid: bc8eb5bd6f1f2d04fbfbf5d22547e063, type: 3}
   audioPlayer3D: {fileID: 4768661004723879035, guid: a1eb6fef7eba22340b2209ce3de9eb3c, type: 3}
-  breathAudioPlayer: {fileID: 0}
   audioPoints:
   - {fileID: 4512893516561706437}
   - {fileID: 7356073557929910319}
@@ -323,6 +325,20 @@ MonoBehaviour:
   footstepInterval: 0.5
   canPlayBreath: 1
   canPlayFootsteps: 1
+--- !u!114 &4387246008549004593
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4887402554224320818}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c8818e6d01e473eb273e386cafb2c73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInstant: 1
+  smallerScale: 0.75
 --- !u!114 &4887402554224320824 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4459864850019384740, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
