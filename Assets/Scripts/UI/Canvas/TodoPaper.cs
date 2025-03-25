@@ -23,7 +23,7 @@ namespace UI.Canvas
         [SerializeField] private float animationDuration = 0.5f;
         [SerializeField] private float rotationAngle = 15f;
         
-        private List<TodoPair> _todoObjects = new ();
+        private Dictionary<string, TodoPair> _todoPairs = new ();
         private int _currentTodo;
         
         private Coroutine _currentAnimation;
@@ -34,9 +34,14 @@ namespace UI.Canvas
             rectTransform.localPosition = hiddenPosition;
             
             TodoPair[] childTodos = todoParent.GetComponentsInChildren<TodoPair>();
-            
+
             if (childTodos.Length > 0)
-                _todoObjects.AddRange(childTodos);
+            {
+                foreach (TodoPair pair in childTodos)
+                {
+                    _todoPairs.Add(pair.GetTask(), pair);
+                }
+            }
         }
 
         [ContextMenu("Create Todos")]
@@ -49,7 +54,7 @@ namespace UI.Canvas
                 DestroyImmediate(child.gameObject);
             }
 
-            _todoObjects.Clear();
+            _todoPairs.Clear();
 
             if (todoPrefab == null 
                 || todoParent == null)
@@ -61,17 +66,14 @@ namespace UI.Canvas
             {
                 TodoPair todo = Instantiate(todoPrefab, todoParent);
                 todo.SetText(todos[i]);
-                _todoObjects.Add(todo);
+                _todoPairs.Add(todos[i], todo);
             }
         }
 
-        public void MarkNextTodoDone()
+        public void MarkToDone(string todo)
         {
-            if (_currentTodo == _todoObjects.Count)
-                return;
-            
-            _todoObjects[_currentTodo].SetTodoDone();
-            _currentTodo++;
+            if (_todoPairs.ContainsKey(todo))
+                _todoPairs[todo].SetTodoDone();
         }
 
         public void TogglePosition()

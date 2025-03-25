@@ -14,5 +14,7 @@ namespace UI.Canvas
         public void SetText(string target) => text.text = target;
         
         public void SetTodoDone() => scrapedOutImage.gameObject.SetActive(true);
+
+        public string GetTask() => text.text;
     }
 }
