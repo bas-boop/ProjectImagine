@@ -15,6 +15,7 @@ namespace UI.Canvas
         [SerializeField] private Transform todoParent;
         [SerializeField] private TodoPair todoPrefab;
         [SerializeField] private List<string> todos;
+        [SerializeField] private string secretTodo;
         
         [Header("Animation")]
         [SerializeField] private RectTransform rectTransform;
@@ -50,7 +51,6 @@ namespace UI.Canvas
             for (int i = todoParent.childCount - 1; i >= 0; i--)
             {
                 Transform child = todoParent.GetChild(i);
-                Debug.Log(i);
                 DestroyImmediate(child.gameObject);
             }
 
@@ -74,6 +74,13 @@ namespace UI.Canvas
         {
             if (_todoPairs.ContainsKey(todo))
                 _todoPairs[todo].SetTodoDone();
+        }
+        
+        public void AddSecretTodo()
+        {
+            TodoPair todo = Instantiate(todoPrefab, todoParent);
+            todo.SetText(secretTodo);
+            _todoPairs.Add(secretTodo, todo);
         }
 
         public void TogglePosition()
