@@ -15,7 +15,7 @@ namespace UI.Canvas
         [SerializeField] private UnityEvent onDoneShowing;
 
         private Coroutine _typingCoroutine;
-        private List<string> _shownDialogue = new ();
+        private readonly List<string> _shownDialogue = new ();
 
         private void Awake() => text.text = string.Empty;
 
