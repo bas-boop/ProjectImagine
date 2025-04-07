@@ -5993,10 +5993,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: -8961359253771211100, guid: b8eee5e64ecab5f4191b4df1a32e5c04, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b8eee5e64ecab5f4191b4df1a32e5c04, type: 3}
       propertyPath: m_LocalPosition.x
       value: -14.65
@@ -6037,45 +6033,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -7640558969779515294, guid: b8eee5e64ecab5f4191b4df1a32e5c04, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
-    - target: {fileID: -7146521406498821007, guid: b8eee5e64ecab5f4191b4df1a32e5c04, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
-    - target: {fileID: -4172671774391270257, guid: b8eee5e64ecab5f4191b4df1a32e5c04, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
-    - target: {fileID: -2045257923548263128, guid: b8eee5e64ecab5f4191b4df1a32e5c04, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
-    - target: {fileID: -1599826595754709761, guid: b8eee5e64ecab5f4191b4df1a32e5c04, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
-    - target: {fileID: -1063203228461421988, guid: b8eee5e64ecab5f4191b4df1a32e5c04, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
-    - target: {fileID: -466329591000292508, guid: b8eee5e64ecab5f4191b4df1a32e5c04, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
-    - target: {fileID: 281855664364225751, guid: b8eee5e64ecab5f4191b4df1a32e5c04, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: b8eee5e64ecab5f4191b4df1a32e5c04, type: 3}
       propertyPath: m_Name
       value: building_yellow (5)
-      objectReference: {fileID: 0}
-    - target: {fileID: 4767400413853537203, guid: b8eee5e64ecab5f4191b4df1a32e5c04, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7872,10 +7832,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 4459864850019384750, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8745,79 +8701,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 7ba817217749c1346ad92f57fa2db3f9, type: 3}
   m_PrefabInstance: {fileID: 215199940}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &218852427
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4887402554224320818, guid: 6df5822fc3e249b4492d53a3fa351c8c, type: 3}
-      propertyPath: m_Name
-      value: FirstPersonController Variant
-      objectReference: {fileID: 0}
-    - target: {fileID: 4887402554224320830, guid: 6df5822fc3e249b4492d53a3fa351c8c, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.6
-      objectReference: {fileID: 0}
-    - target: {fileID: 4887402554224320830, guid: 6df5822fc3e249b4492d53a3fa351c8c, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.6
-      objectReference: {fileID: 0}
-    - target: {fileID: 4887402554224320830, guid: 6df5822fc3e249b4492d53a3fa351c8c, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.6
-      objectReference: {fileID: 0}
-    - target: {fileID: 4887402554224320830, guid: 6df5822fc3e249b4492d53a3fa351c8c, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 43.415
-      objectReference: {fileID: 0}
-    - target: {fileID: 4887402554224320830, guid: 6df5822fc3e249b4492d53a3fa351c8c, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.85
-      objectReference: {fileID: 0}
-    - target: {fileID: 4887402554224320830, guid: 6df5822fc3e249b4492d53a3fa351c8c, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -6.358
-      objectReference: {fileID: 0}
-    - target: {fileID: 4887402554224320830, guid: 6df5822fc3e249b4492d53a3fa351c8c, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4887402554224320830, guid: 6df5822fc3e249b4492d53a3fa351c8c, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4887402554224320830, guid: 6df5822fc3e249b4492d53a3fa351c8c, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4887402554224320830, guid: 6df5822fc3e249b4492d53a3fa351c8c, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4887402554224320830, guid: 6df5822fc3e249b4492d53a3fa351c8c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4887402554224320830, guid: 6df5822fc3e249b4492d53a3fa351c8c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4887402554224320830, guid: 6df5822fc3e249b4492d53a3fa351c8c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4887402554224320830, guid: 6df5822fc3e249b4492d53a3fa351c8c, type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 6df5822fc3e249b4492d53a3fa351c8c, type: 3}
 --- !u!1 &220275100
 GameObject:
   m_ObjectHideFlags: 0
@@ -19327,45 +19210,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -8391222552659086748, guid: a1d4d5097ef09c34e991a12d4c58ccce, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
-    - target: {fileID: -6528889321818190380, guid: a1d4d5097ef09c34e991a12d4c58ccce, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
-    - target: {fileID: -4952707064221156495, guid: a1d4d5097ef09c34e991a12d4c58ccce, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
-    - target: {fileID: -516098083770646512, guid: a1d4d5097ef09c34e991a12d4c58ccce, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: a1d4d5097ef09c34e991a12d4c58ccce, type: 3}
       propertyPath: m_Name
       value: building (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 5148817236446094103, guid: a1d4d5097ef09c34e991a12d4c58ccce, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
-    - target: {fileID: 5918783438075374393, guid: a1d4d5097ef09c34e991a12d4c58ccce, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
-    - target: {fileID: 6507901977716847365, guid: a1d4d5097ef09c34e991a12d4c58ccce, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
-    - target: {fileID: 8416272007918961125, guid: a1d4d5097ef09c34e991a12d4c58ccce, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
-    - target: {fileID: 8515337499531183413, guid: a1d4d5097ef09c34e991a12d4c58ccce, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -21512,10 +21359,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: -8961359253771211100, guid: b8eee5e64ecab5f4191b4df1a32e5c04, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b8eee5e64ecab5f4191b4df1a32e5c04, type: 3}
       propertyPath: m_LocalPosition.x
       value: 48.86
@@ -21556,45 +21399,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -7640558969779515294, guid: b8eee5e64ecab5f4191b4df1a32e5c04, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
-    - target: {fileID: -7146521406498821007, guid: b8eee5e64ecab5f4191b4df1a32e5c04, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
-    - target: {fileID: -4172671774391270257, guid: b8eee5e64ecab5f4191b4df1a32e5c04, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
-    - target: {fileID: -2045257923548263128, guid: b8eee5e64ecab5f4191b4df1a32e5c04, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
-    - target: {fileID: -1599826595754709761, guid: b8eee5e64ecab5f4191b4df1a32e5c04, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
-    - target: {fileID: -1063203228461421988, guid: b8eee5e64ecab5f4191b4df1a32e5c04, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
-    - target: {fileID: -466329591000292508, guid: b8eee5e64ecab5f4191b4df1a32e5c04, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
-    - target: {fileID: 281855664364225751, guid: b8eee5e64ecab5f4191b4df1a32e5c04, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: b8eee5e64ecab5f4191b4df1a32e5c04, type: 3}
       propertyPath: m_Name
       value: building_yellow
-      objectReference: {fileID: 0}
-    - target: {fileID: 4767400413853537203, guid: b8eee5e64ecab5f4191b4df1a32e5c04, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -33029,10 +32836,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: -8961359253771211100, guid: b8eee5e64ecab5f4191b4df1a32e5c04, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b8eee5e64ecab5f4191b4df1a32e5c04, type: 3}
       propertyPath: m_LocalPosition.x
       value: 12.22
@@ -33073,45 +32876,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -7640558969779515294, guid: b8eee5e64ecab5f4191b4df1a32e5c04, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
-    - target: {fileID: -7146521406498821007, guid: b8eee5e64ecab5f4191b4df1a32e5c04, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
-    - target: {fileID: -4172671774391270257, guid: b8eee5e64ecab5f4191b4df1a32e5c04, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
-    - target: {fileID: -2045257923548263128, guid: b8eee5e64ecab5f4191b4df1a32e5c04, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
-    - target: {fileID: -1599826595754709761, guid: b8eee5e64ecab5f4191b4df1a32e5c04, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
-    - target: {fileID: -1063203228461421988, guid: b8eee5e64ecab5f4191b4df1a32e5c04, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
-    - target: {fileID: -466329591000292508, guid: b8eee5e64ecab5f4191b4df1a32e5c04, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
-    - target: {fileID: 281855664364225751, guid: b8eee5e64ecab5f4191b4df1a32e5c04, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: b8eee5e64ecab5f4191b4df1a32e5c04, type: 3}
       propertyPath: m_Name
       value: building_yellow (4)
-      objectReference: {fileID: 0}
-    - target: {fileID: 4767400413853537203, guid: b8eee5e64ecab5f4191b4df1a32e5c04, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -34030,18 +33797,6 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: d911badd24ccfac458b1fa88b15d504e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -1879502829873561083, guid: d911badd24ccfac458b1fa88b15d504e, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
-    - target: {fileID: -208595431880416365, guid: d911badd24ccfac458b1fa88b15d504e, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
-    - target: {fileID: 281855664364225751, guid: d911badd24ccfac458b1fa88b15d504e, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d911badd24ccfac458b1fa88b15d504e, type: 3}
       propertyPath: m_Name
@@ -46598,10 +46353,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: -8961359253771211100, guid: b8eee5e64ecab5f4191b4df1a32e5c04, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b8eee5e64ecab5f4191b4df1a32e5c04, type: 3}
       propertyPath: m_LocalPosition.x
       value: 24.02
@@ -46642,45 +46393,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -7640558969779515294, guid: b8eee5e64ecab5f4191b4df1a32e5c04, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
-    - target: {fileID: -7146521406498821007, guid: b8eee5e64ecab5f4191b4df1a32e5c04, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
-    - target: {fileID: -4172671774391270257, guid: b8eee5e64ecab5f4191b4df1a32e5c04, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
-    - target: {fileID: -2045257923548263128, guid: b8eee5e64ecab5f4191b4df1a32e5c04, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
-    - target: {fileID: -1599826595754709761, guid: b8eee5e64ecab5f4191b4df1a32e5c04, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
-    - target: {fileID: -1063203228461421988, guid: b8eee5e64ecab5f4191b4df1a32e5c04, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
-    - target: {fileID: -466329591000292508, guid: b8eee5e64ecab5f4191b4df1a32e5c04, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
-    - target: {fileID: 281855664364225751, guid: b8eee5e64ecab5f4191b4df1a32e5c04, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: b8eee5e64ecab5f4191b4df1a32e5c04, type: 3}
       propertyPath: m_Name
       value: building_yellow (3)
-      objectReference: {fileID: 0}
-    - target: {fileID: 4767400413853537203, guid: b8eee5e64ecab5f4191b4df1a32e5c04, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -50918,18 +50633,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -1879502829873561083, guid: d911badd24ccfac458b1fa88b15d504e, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
-    - target: {fileID: -208595431880416365, guid: d911badd24ccfac458b1fa88b15d504e, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
-    - target: {fileID: 281855664364225751, guid: d911badd24ccfac458b1fa88b15d504e, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d911badd24ccfac458b1fa88b15d504e, type: 3}
       propertyPath: m_Name
       value: house
@@ -52932,45 +52635,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -8391222552659086748, guid: a1d4d5097ef09c34e991a12d4c58ccce, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
-    - target: {fileID: -6528889321818190380, guid: a1d4d5097ef09c34e991a12d4c58ccce, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
-    - target: {fileID: -4952707064221156495, guid: a1d4d5097ef09c34e991a12d4c58ccce, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
-    - target: {fileID: -516098083770646512, guid: a1d4d5097ef09c34e991a12d4c58ccce, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: a1d4d5097ef09c34e991a12d4c58ccce, type: 3}
       propertyPath: m_Name
       value: building (4)
-      objectReference: {fileID: 0}
-    - target: {fileID: 5148817236446094103, guid: a1d4d5097ef09c34e991a12d4c58ccce, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
-    - target: {fileID: 5918783438075374393, guid: a1d4d5097ef09c34e991a12d4c58ccce, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
-    - target: {fileID: 6507901977716847365, guid: a1d4d5097ef09c34e991a12d4c58ccce, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
-    - target: {fileID: 8416272007918961125, guid: a1d4d5097ef09c34e991a12d4c58ccce, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
-    - target: {fileID: 8515337499531183413, guid: a1d4d5097ef09c34e991a12d4c58ccce, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -55786,10 +55453,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: -8961359253771211100, guid: b8eee5e64ecab5f4191b4df1a32e5c04, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b8eee5e64ecab5f4191b4df1a32e5c04, type: 3}
       propertyPath: m_LocalPosition.x
       value: -20.07
@@ -55830,45 +55493,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -7640558969779515294, guid: b8eee5e64ecab5f4191b4df1a32e5c04, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
-    - target: {fileID: -7146521406498821007, guid: b8eee5e64ecab5f4191b4df1a32e5c04, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
-    - target: {fileID: -4172671774391270257, guid: b8eee5e64ecab5f4191b4df1a32e5c04, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
-    - target: {fileID: -2045257923548263128, guid: b8eee5e64ecab5f4191b4df1a32e5c04, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
-    - target: {fileID: -1599826595754709761, guid: b8eee5e64ecab5f4191b4df1a32e5c04, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
-    - target: {fileID: -1063203228461421988, guid: b8eee5e64ecab5f4191b4df1a32e5c04, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
-    - target: {fileID: -466329591000292508, guid: b8eee5e64ecab5f4191b4df1a32e5c04, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
-    - target: {fileID: 281855664364225751, guid: b8eee5e64ecab5f4191b4df1a32e5c04, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: b8eee5e64ecab5f4191b4df1a32e5c04, type: 3}
       propertyPath: m_Name
       value: building_yellow (8)
-      objectReference: {fileID: 0}
-    - target: {fileID: 4767400413853537203, guid: b8eee5e64ecab5f4191b4df1a32e5c04, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -56433,45 +56060,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -8391222552659086748, guid: a1d4d5097ef09c34e991a12d4c58ccce, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
-    - target: {fileID: -6528889321818190380, guid: a1d4d5097ef09c34e991a12d4c58ccce, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
-    - target: {fileID: -4952707064221156495, guid: a1d4d5097ef09c34e991a12d4c58ccce, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
-    - target: {fileID: -516098083770646512, guid: a1d4d5097ef09c34e991a12d4c58ccce, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: a1d4d5097ef09c34e991a12d4c58ccce, type: 3}
       propertyPath: m_Name
       value: building
-      objectReference: {fileID: 0}
-    - target: {fileID: 5148817236446094103, guid: a1d4d5097ef09c34e991a12d4c58ccce, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
-    - target: {fileID: 5918783438075374393, guid: a1d4d5097ef09c34e991a12d4c58ccce, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
-    - target: {fileID: 6507901977716847365, guid: a1d4d5097ef09c34e991a12d4c58ccce, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
-    - target: {fileID: 8416272007918961125, guid: a1d4d5097ef09c34e991a12d4c58ccce, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
-    - target: {fileID: 8515337499531183413, guid: a1d4d5097ef09c34e991a12d4c58ccce, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -57471,10 +57062,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: -8961359253771211100, guid: b8eee5e64ecab5f4191b4df1a32e5c04, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b8eee5e64ecab5f4191b4df1a32e5c04, type: 3}
       propertyPath: m_LocalPosition.x
       value: -26.332035
@@ -57515,45 +57102,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -7640558969779515294, guid: b8eee5e64ecab5f4191b4df1a32e5c04, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
-    - target: {fileID: -7146521406498821007, guid: b8eee5e64ecab5f4191b4df1a32e5c04, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
-    - target: {fileID: -4172671774391270257, guid: b8eee5e64ecab5f4191b4df1a32e5c04, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
-    - target: {fileID: -2045257923548263128, guid: b8eee5e64ecab5f4191b4df1a32e5c04, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
-    - target: {fileID: -1599826595754709761, guid: b8eee5e64ecab5f4191b4df1a32e5c04, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
-    - target: {fileID: -1063203228461421988, guid: b8eee5e64ecab5f4191b4df1a32e5c04, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
-    - target: {fileID: -466329591000292508, guid: b8eee5e64ecab5f4191b4df1a32e5c04, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
-    - target: {fileID: 281855664364225751, guid: b8eee5e64ecab5f4191b4df1a32e5c04, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: b8eee5e64ecab5f4191b4df1a32e5c04, type: 3}
       propertyPath: m_Name
       value: building_yellow (9)
-      objectReference: {fileID: 0}
-    - target: {fileID: 4767400413853537203, guid: b8eee5e64ecab5f4191b4df1a32e5c04, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -59208,10 +58759,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: -8961359253771211100, guid: b8eee5e64ecab5f4191b4df1a32e5c04, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b8eee5e64ecab5f4191b4df1a32e5c04, type: 3}
       propertyPath: m_LocalPosition.x
       value: 24.02
@@ -59252,45 +58799,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -7640558969779515294, guid: b8eee5e64ecab5f4191b4df1a32e5c04, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
-    - target: {fileID: -7146521406498821007, guid: b8eee5e64ecab5f4191b4df1a32e5c04, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
-    - target: {fileID: -4172671774391270257, guid: b8eee5e64ecab5f4191b4df1a32e5c04, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
-    - target: {fileID: -2045257923548263128, guid: b8eee5e64ecab5f4191b4df1a32e5c04, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
-    - target: {fileID: -1599826595754709761, guid: b8eee5e64ecab5f4191b4df1a32e5c04, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
-    - target: {fileID: -1063203228461421988, guid: b8eee5e64ecab5f4191b4df1a32e5c04, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
-    - target: {fileID: -466329591000292508, guid: b8eee5e64ecab5f4191b4df1a32e5c04, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
-    - target: {fileID: 281855664364225751, guid: b8eee5e64ecab5f4191b4df1a32e5c04, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: b8eee5e64ecab5f4191b4df1a32e5c04, type: 3}
       propertyPath: m_Name
       value: building_yellow (2)
-      objectReference: {fileID: 0}
-    - target: {fileID: 4767400413853537203, guid: b8eee5e64ecab5f4191b4df1a32e5c04, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -59458,45 +58969,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -8391222552659086748, guid: a1d4d5097ef09c34e991a12d4c58ccce, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
-    - target: {fileID: -6528889321818190380, guid: a1d4d5097ef09c34e991a12d4c58ccce, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
-    - target: {fileID: -4952707064221156495, guid: a1d4d5097ef09c34e991a12d4c58ccce, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
-    - target: {fileID: -516098083770646512, guid: a1d4d5097ef09c34e991a12d4c58ccce, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: a1d4d5097ef09c34e991a12d4c58ccce, type: 3}
       propertyPath: m_Name
       value: building (3)
-      objectReference: {fileID: 0}
-    - target: {fileID: 5148817236446094103, guid: a1d4d5097ef09c34e991a12d4c58ccce, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
-    - target: {fileID: 5918783438075374393, guid: a1d4d5097ef09c34e991a12d4c58ccce, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
-    - target: {fileID: 6507901977716847365, guid: a1d4d5097ef09c34e991a12d4c58ccce, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
-    - target: {fileID: 8416272007918961125, guid: a1d4d5097ef09c34e991a12d4c58ccce, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
-    - target: {fileID: 8515337499531183413, guid: a1d4d5097ef09c34e991a12d4c58ccce, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -63833,10 +63308,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: -8961359253771211100, guid: b8eee5e64ecab5f4191b4df1a32e5c04, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b8eee5e64ecab5f4191b4df1a32e5c04, type: 3}
       propertyPath: m_LocalPosition.x
       value: 40.9
@@ -63877,45 +63348,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -7640558969779515294, guid: b8eee5e64ecab5f4191b4df1a32e5c04, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
-    - target: {fileID: -7146521406498821007, guid: b8eee5e64ecab5f4191b4df1a32e5c04, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
-    - target: {fileID: -4172671774391270257, guid: b8eee5e64ecab5f4191b4df1a32e5c04, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
-    - target: {fileID: -2045257923548263128, guid: b8eee5e64ecab5f4191b4df1a32e5c04, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
-    - target: {fileID: -1599826595754709761, guid: b8eee5e64ecab5f4191b4df1a32e5c04, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
-    - target: {fileID: -1063203228461421988, guid: b8eee5e64ecab5f4191b4df1a32e5c04, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
-    - target: {fileID: -466329591000292508, guid: b8eee5e64ecab5f4191b4df1a32e5c04, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
-    - target: {fileID: 281855664364225751, guid: b8eee5e64ecab5f4191b4df1a32e5c04, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: b8eee5e64ecab5f4191b4df1a32e5c04, type: 3}
       propertyPath: m_Name
       value: building_yellow (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 4767400413853537203, guid: b8eee5e64ecab5f4191b4df1a32e5c04, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -64080,45 +63515,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -8391222552659086748, guid: a1d4d5097ef09c34e991a12d4c58ccce, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
-    - target: {fileID: -6528889321818190380, guid: a1d4d5097ef09c34e991a12d4c58ccce, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
-    - target: {fileID: -4952707064221156495, guid: a1d4d5097ef09c34e991a12d4c58ccce, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
-    - target: {fileID: -516098083770646512, guid: a1d4d5097ef09c34e991a12d4c58ccce, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: a1d4d5097ef09c34e991a12d4c58ccce, type: 3}
       propertyPath: m_Name
       value: building (2)
-      objectReference: {fileID: 0}
-    - target: {fileID: 5148817236446094103, guid: a1d4d5097ef09c34e991a12d4c58ccce, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
-    - target: {fileID: 5918783438075374393, guid: a1d4d5097ef09c34e991a12d4c58ccce, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
-    - target: {fileID: 6507901977716847365, guid: a1d4d5097ef09c34e991a12d4c58ccce, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
-    - target: {fileID: 8416272007918961125, guid: a1d4d5097ef09c34e991a12d4c58ccce, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
-    - target: {fileID: 8515337499531183413, guid: a1d4d5097ef09c34e991a12d4c58ccce, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -64819,10 +64218,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: -8961359253771211100, guid: b8eee5e64ecab5f4191b4df1a32e5c04, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b8eee5e64ecab5f4191b4df1a32e5c04, type: 3}
       propertyPath: m_LocalPosition.x
       value: 14.79
@@ -64863,45 +64258,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -7640558969779515294, guid: b8eee5e64ecab5f4191b4df1a32e5c04, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
-    - target: {fileID: -7146521406498821007, guid: b8eee5e64ecab5f4191b4df1a32e5c04, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
-    - target: {fileID: -4172671774391270257, guid: b8eee5e64ecab5f4191b4df1a32e5c04, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
-    - target: {fileID: -2045257923548263128, guid: b8eee5e64ecab5f4191b4df1a32e5c04, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
-    - target: {fileID: -1599826595754709761, guid: b8eee5e64ecab5f4191b4df1a32e5c04, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
-    - target: {fileID: -1063203228461421988, guid: b8eee5e64ecab5f4191b4df1a32e5c04, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
-    - target: {fileID: -466329591000292508, guid: b8eee5e64ecab5f4191b4df1a32e5c04, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
-    - target: {fileID: 281855664364225751, guid: b8eee5e64ecab5f4191b4df1a32e5c04, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: b8eee5e64ecab5f4191b4df1a32e5c04, type: 3}
       propertyPath: m_Name
       value: building_yellow (6)
-      objectReference: {fileID: 0}
-    - target: {fileID: 4767400413853537203, guid: b8eee5e64ecab5f4191b4df1a32e5c04, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -72406,18 +71765,6 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: -1879502829873561083, guid: d911badd24ccfac458b1fa88b15d504e, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
-    - target: {fileID: -208595431880416365, guid: d911badd24ccfac458b1fa88b15d504e, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
-    - target: {fileID: 281855664364225751, guid: d911badd24ccfac458b1fa88b15d504e, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d911badd24ccfac458b1fa88b15d504e, type: 3}
       propertyPath: m_Name
       value: house (2)
@@ -73664,45 +73011,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -8391222552659086748, guid: a1d4d5097ef09c34e991a12d4c58ccce, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
-    - target: {fileID: -6528889321818190380, guid: a1d4d5097ef09c34e991a12d4c58ccce, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
-    - target: {fileID: -4952707064221156495, guid: a1d4d5097ef09c34e991a12d4c58ccce, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
-    - target: {fileID: -516098083770646512, guid: a1d4d5097ef09c34e991a12d4c58ccce, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: a1d4d5097ef09c34e991a12d4c58ccce, type: 3}
       propertyPath: m_Name
       value: building (5)
-      objectReference: {fileID: 0}
-    - target: {fileID: 5148817236446094103, guid: a1d4d5097ef09c34e991a12d4c58ccce, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
-    - target: {fileID: 5918783438075374393, guid: a1d4d5097ef09c34e991a12d4c58ccce, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
-    - target: {fileID: 6507901977716847365, guid: a1d4d5097ef09c34e991a12d4c58ccce, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
-    - target: {fileID: 8416272007918961125, guid: a1d4d5097ef09c34e991a12d4c58ccce, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
-    - target: {fileID: 8515337499531183413, guid: a1d4d5097ef09c34e991a12d4c58ccce, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -81916,10 +81227,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: -8961359253771211100, guid: b8eee5e64ecab5f4191b4df1a32e5c04, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b8eee5e64ecab5f4191b4df1a32e5c04, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.59
@@ -81960,45 +81267,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -7640558969779515294, guid: b8eee5e64ecab5f4191b4df1a32e5c04, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
-    - target: {fileID: -7146521406498821007, guid: b8eee5e64ecab5f4191b4df1a32e5c04, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
-    - target: {fileID: -4172671774391270257, guid: b8eee5e64ecab5f4191b4df1a32e5c04, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
-    - target: {fileID: -2045257923548263128, guid: b8eee5e64ecab5f4191b4df1a32e5c04, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
-    - target: {fileID: -1599826595754709761, guid: b8eee5e64ecab5f4191b4df1a32e5c04, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
-    - target: {fileID: -1063203228461421988, guid: b8eee5e64ecab5f4191b4df1a32e5c04, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
-    - target: {fileID: -466329591000292508, guid: b8eee5e64ecab5f4191b4df1a32e5c04, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
-    - target: {fileID: 281855664364225751, guid: b8eee5e64ecab5f4191b4df1a32e5c04, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: b8eee5e64ecab5f4191b4df1a32e5c04, type: 3}
       propertyPath: m_Name
       value: building_yellow (7)
-      objectReference: {fileID: 0}
-    - target: {fileID: 4767400413853537203, guid: b8eee5e64ecab5f4191b4df1a32e5c04, type: 3}
-      propertyPath: m_TagString
-      value: Cullable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -86561,7 +85832,6 @@ SceneRoots:
   m_Roots:
   - {fileID: 196822457}
   - {fileID: 2018270149}
-  - {fileID: 218852427}
   - {fileID: 1112258758}
   - {fileID: 232092904}
   - {fileID: 19469676}
