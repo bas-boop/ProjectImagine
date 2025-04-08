@@ -76,5 +76,7 @@ crashlytics-build.properties
 .vsconfig
 
 # TMP
+/[Aa]ssets/TextMesh Pro
+/[Aa]ssets/TextMesh Pro.meta
 /[Aa]ssets/ThirdParty/TextMesh Pro
 /[Aa]ssets/ThirdParty/TextMesh Pro.meta
