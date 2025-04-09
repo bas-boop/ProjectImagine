@@ -17,6 +17,7 @@ namespace Framework.AudioSystem
         [SerializeField] private AudioClip breathSound;
         [SerializeField] private AudioClip[] footstepsSound;
         [SerializeField] private float footstepInterval = 0.5f;
+        [SerializeField] private float footstepVolume = 1.5f;
         
         // No header needed, there is a collapse for them 
         [SerializeField] private bool canPlayBreath = true;
@@ -45,9 +46,14 @@ namespace Framework.AudioSystem
                 PlayFootStep();
             }
         }
-
-        public void Play() => Instantiate(audioPlayer2D, transform.position, transform.rotation, transform);
         
+        public void Play(AudioClip clip)
+        {
+            AudioSource newAudio = Instantiate(audioPlayer2D, transform.position, transform.rotation, transform);
+            newAudio.clip = clip;
+            newAudio.Play();
+        }
+
         public void PlayDirection(int dir)
             => Instantiate(audioPlayer3D, audioPoints[dir].position, audioPoints[dir].rotation);
 
@@ -84,6 +90,8 @@ namespace Framework.AudioSystem
             AudioSource newAudio = Instantiate(audioPlayer2D, transform.position, transform.rotation, transform);
             int random = Random.Range(0, footstepsSound.Length);
             newAudio.clip = footstepsSound[random];
+            newAudio.volume *= footstepVolume;
+            newAudio.Play();
         }
     }
 }
