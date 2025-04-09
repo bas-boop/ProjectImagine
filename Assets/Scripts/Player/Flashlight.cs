@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using Framework.Attributes;
 using UnityEngine;
+using UnityEngine.Events;
 using Random = UnityEngine.Random;
 
 namespace Player
@@ -13,6 +14,8 @@ namespace Player
         [SerializeField, RangeVector2(0, 1, 0, 1)] private Vector2 onDurationRange;
         [SerializeField, RangeVector2(0, 1, 0, 1)] private Vector2 weakLightRange;
 
+        [SerializeField] private UnityEvent on = new ();
+
         private float _intensity;
 
         private void Awake()
@@ -21,7 +24,11 @@ namespace Player
                 light = GetComponent<Light>();
         }
 
-        public void SetOn(bool target) => light.intensity = target ? _intensity : 0;
+        public void SetOn(bool target)
+        {
+            light.intensity = target ? _intensity : 0;
+            on?.Invoke();
+        }
 
         public void DoFlicker(float duration) => StartCoroutine(Flicker(duration));
 
@@ -43,6 +50,7 @@ namespace Player
                 light.intensity = _intensity * Random.Range(weakLightRange.x, weakLightRange.y);
                 yield return new WaitForSeconds(Random.Range(onDurationRange.x, onDurationRange.y));
 
+                on?.Invoke();
                 elapsed += Time.deltaTime;
                 
                 if (elapsed >= duration)

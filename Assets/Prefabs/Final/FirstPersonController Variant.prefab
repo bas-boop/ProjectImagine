@@ -93,8 +93,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2642995144182990892}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.03308308, y: -0.053719755, z: -0.0041970545, w: 0.997999}
-  m_LocalPosition: {x: 0.83000034, y: -0.16000006, z: -0.000007087365}
+  m_LocalRotation: {x: -0.033341452, y: 0.05355911, z: -0.0006274101, w: 0.9980077}
+  m_LocalPosition: {x: -0.8300003, y: -0.16000006, z: -0.000007087365}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -102,7 +102,7 @@ Transform:
   - {fileID: 8746605362509329863}
   - {fileID: 8035337838356616329}
   m_Father: {fileID: 4887402552864377761}
-  m_LocalEulerAnglesHint: {x: -3.812, y: -6.153, z: -0.277}
+  m_LocalEulerAnglesHint: {x: -3.812, y: 6.153, z: -0.277}
 --- !u!108 &3530186401213215722
 Light:
   m_ObjectHideFlags: 0
@@ -207,6 +207,21 @@ MonoBehaviour:
   offDurationRange: {x: 0.1, y: 0.2}
   onDurationRange: {x: 0.1, y: 0.2}
   weakLightRange: {x: 0.4, y: 0.9}
+  on:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 995730887480845126}
+        m_TargetAssemblyTypeName: Framework.AudioSystem.AudioManager, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: 3bbc7539b4af77246ae2751aa2b5b32b, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &4769846388119604813
 GameObject:
   m_ObjectHideFlags: 0
@@ -542,31 +557,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 811998f546fc42844a92e65db673737c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.01142659
+      value: 0.013326809
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 811998f546fc42844a92e65db673737c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.42764467
+      value: -0.43091843
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 811998f546fc42844a92e65db673737c, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.94606256
+      value: 0.9459146
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 811998f546fc42844a92e65db673737c, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9451051
+      value: 0.8271102
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 811998f546fc42844a92e65db673737c, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.0031329617
+      value: -0.047349438
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 811998f546fc42844a92e65db673737c, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.057025418
+      value: 0.031933494
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 811998f546fc42844a92e65db673737c, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.3217372
+      value: -0.5591306
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 811998f546fc42844a92e65db673737c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -578,7 +593,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 811998f546fc42844a92e65db673737c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 37.47
+      value: -68.247
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 811998f546fc42844a92e65db673737c, type: 3}
       propertyPath: m_ConstrainProportionsScale
@@ -607,16 +622,20 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 4459864850019384738, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 4459864850019384738, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 43.3
       objectReference: {fileID: 0}
     - target: {fileID: 4459864850019384738, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4459864850019384738, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -13.21
       objectReference: {fileID: 0}
     - target: {fileID: 4459864850019384738, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
       propertyPath: m_LocalRotation.w
@@ -624,15 +643,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4459864850019384738, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4459864850019384738, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4459864850019384738, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4459864850019384738, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -647,11 +666,27 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4459864850019384740, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
+      propertyPath: sprintBar
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4459864850019384740, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
       propertyPath: enableJump
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4459864850019384740, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
       propertyPath: lockCursor
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4459864850019384740, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
+      propertyPath: sprintBarBG
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4459864850019384740, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
+      propertyPath: sprintSpeed
+      value: 12.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 4459864850019384740, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
+      propertyPath: enableCrouch
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4459864850019384740, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
@@ -667,7 +702,8 @@ PrefabInstance:
       value: 25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 4459864851551516604, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 4459864850019384738, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
       insertIndex: -1
@@ -771,11 +807,16 @@ MonoBehaviour:
   - {fileID: 7356073557929910319}
   - {fileID: 5607987728750579117}
   - {fileID: 1109143324401603422}
-  breathSound: {fileID: 8300000, guid: 7d51a24576ea1dc43b07384b4635bed1, type: 3}
+  breathSound: {fileID: 8300000, guid: 080664ae41c9ad549b00fc8c2104a72e, type: 3}
   footstepsSound:
-  - {fileID: 8300000, guid: 7d51a24576ea1dc43b07384b4635bed1, type: 3}
-  - {fileID: 8300000, guid: 7d51a24576ea1dc43b07384b4635bed1, type: 3}
+  - {fileID: 8300000, guid: 992c636034f54824db6821fc6e0cb2f1, type: 3}
+  - {fileID: 8300000, guid: 12f31d3de4f8b544098126c2b405abf5, type: 3}
+  - {fileID: 8300000, guid: bcb45e25efc0ec94d85bd2ee6075a5a9, type: 3}
+  - {fileID: 8300000, guid: 23389d259046a9246b0edaecf3e33f1a, type: 3}
+  - {fileID: 8300000, guid: 5755ee10842c581459cbbfe15953d1c3, type: 3}
+  - {fileID: 8300000, guid: 70f190d4d251f7e41beb19a9c23050f4, type: 3}
   footstepInterval: 0.5
+  footstepVolume: 1.75
   canPlayBreath: 1
   canPlayFootsteps: 1
 --- !u!114 &4387246008549004593

@@ -2,16 +2,22 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 using System.Collections;
+using Framework.Extensions;
+using UnityEngine.Events;
 
 public class TeleportTrigger : MonoBehaviour
 {
     public Transform player;
-    public Vector3 teleportDestination;
+    public Transform teleportDestination;
     public TextMeshProUGUI interactText;
     public Image fadeImage;
     public float fadeDuration = 0.5f;
     public AudioClip teleportSound;
     public AudioSource audioSource;
+
+    [SerializeField] private bool isBack;
+    [SerializeField] private float offset = 2;
+    [SerializeField] private UnityEvent onFade = new();
 
     private bool playerInRange = false;
     private bool isTeleporting = false;
@@ -27,6 +33,7 @@ public class TeleportTrigger : MonoBehaviour
         if (playerInRange && !isTeleporting && Input.GetKeyDown(KeyCode.E))
         {
             StartCoroutine(TeleportPlayer());
+            onFade?.Invoke();
         }
     }
 
@@ -63,7 +70,8 @@ public class TeleportTrigger : MonoBehaviour
         yield return StartCoroutine(Fade(0, 1));
 
         // Move player
-        player.position = teleportDestination;
+        Vector3 a = teleportDestination.position;
+        player.position = a.AddZ(isBack ? -offset : offset);
 
         // Fade back in
         yield return StartCoroutine(Fade(1, 0));

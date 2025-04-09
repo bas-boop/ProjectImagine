@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace UI.Canvas
 {
@@ -23,6 +24,7 @@ namespace UI.Canvas
         [SerializeField] private Vector2 visiblePosition = Vector2.zero;
         [SerializeField] private float animationDuration = 0.5f;
         [SerializeField] private float rotationAngle = 15f;
+        [SerializeField] private UnityEvent onPaper = new();
         
         private Dictionary<string, TodoPair> _todoPairs = new ();
         private int _currentTodo;
@@ -91,6 +93,7 @@ namespace UI.Canvas
             Vector2 targetPosition = _isShowingPaper ? hiddenPosition : visiblePosition;
             float targetRotation = _isShowingPaper ? 0f : rotationAngle;
 
+            onPaper?.Invoke();
             _currentAnimation = StartCoroutine(SmoothTransition(targetPosition, targetRotation));
             _isShowingPaper = !_isShowingPaper;
         }
